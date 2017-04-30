@@ -1,3 +1,14 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  #Movies
+  get("/", {:controller => "movies", :action => "index"})
+  get("/movies", {:controller => "movies", :action => "index"})
+  get("/movies/:id", {:controller => "movies", :action => "show"})
+
+  #Directors
+  get("/directors", {:controller => "directors", :action => "index"})
+  get('/directors/:id', { :controller => 'directors', :action => "show" })
+  get("/delete_director/:id", { :controller => "directors", :action => "destroy" })
+  
+
 end

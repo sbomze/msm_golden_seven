@@ -1,0 +1,22 @@
+<h1> List of Movies </h1>
+
+<table>
+  <tr>
+    <th> ID </th>
+    <th> Title </th>
+    <th> Year </th>
+    <th> Duration </th>
+    <th> Description </th>
+    <th> Image URL </th>
+
+  </tr>
+  <% Movie.all.each do |movie| %>
+  <tr>
+    <td> <%= movie.id %> </td>
+    <td> <%= movie.title %> </td>
+    <td> <%= movie.year %> </td>
+    <td> <%= movie.duration %> </td>
+    <td> <%= movie.description %> </td>
+    <td> <img src = " <%= movie.image_url %> "> </td>
+  </tr>
+  <% end %>

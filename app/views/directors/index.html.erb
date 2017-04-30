@@ -1,0 +1,21 @@
+<h1> List of Directors </h1>
+
+<table>
+  <tr>
+    <th> ID </th>
+    <th> Name </th>
+    <th> Bio </th>
+    <th> DOB </th>
+    <th> Image URL </th>
+
+  </tr>
+  <% Director.all.each do |director| %>
+  <tr>
+    <td> <%= director.id %> </td>
+    <td> <%= director.name %> </td>
+    <td> <%= director.bio %> </td>
+    <td> <%= director.dob %> </td>
+    <td> <img src = " <%= director.image_url %> "> </td>
+
+  </tr>
+  <% end %>
