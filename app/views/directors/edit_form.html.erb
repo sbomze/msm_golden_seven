@@ -1,0 +1,15 @@
+<h1> Create Director </h1>
+
+<form action = "/update_row/<%= @director.id %>">
+  <label for = "dob"> DOB </label>
+  <input type="text" id="dob" name="dob" placeholder="<%= @director.dob %>" class="form-control">
+  <label for = "name"> Name </label>
+  <input type="text" id="name" name="name" placeholder="<%= @director.name %>" class="form-control">
+  <label for = "name"> Bio </label>
+  <input type="text" id="bio" name="bio" placeholder="<%= @director.bio %>" class="form-control">
+  <label for = "image_url"> Image URL </label>
+  <input type="text" id="image_url" name="image_url" placeholder="<%= @director.image_url %>" class="form-control">
+  <input type="submit" value="Update Director" class="btn btn-primary">
+</form>
+
+<!-- ["id", "name", "bio", "dob", "image_url", "created_at", "updated_at"] -->

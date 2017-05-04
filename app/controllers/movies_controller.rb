@@ -1,6 +1,8 @@
 class MoviesController < ApplicationController
 
-def index
-  @movies = Movie.all
-  render("/movies/index.html.erb")
+  def index
+    @movies = Movie.all
+    render("/movies/index.html.erb")
+  end
+  
 end
