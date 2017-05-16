@@ -17,5 +17,4 @@ Rails.application.routes.draw do
 
   get("/delete_director/:id", { :controller => "directors", :action => "destroy" })
 
-
 end
